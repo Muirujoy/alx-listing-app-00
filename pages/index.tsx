@@ -42,10 +42,12 @@ export default function Home() {
         {PROPERTYLISTINGSAMPLE.map((property, index) => (
           <div key={index} className="border rounded-lg overflow-hidden shadow-sm">
             <Image
-              src={property.image}
-              alt={property.name}
-              className="w-full h-40 object-cover"
-            />
+  src="/images/mansion.jpg"
+  alt="Beautiful Mansion"
+  width={400}      // required
+  height={200}     // required
+  className="w-full object-cover rounded"
+/>
             <div className="p-4">
               <h2 className="text-lg font-semibold">{property.name}</h2>
               <p className="text-sm text-gray-600">{property.address.city}, {property.address.country}</p>
